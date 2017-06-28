@@ -3,6 +3,7 @@ from .. import db
 from .. models import Post,Permission
 from . import api
 from .decorators import permission_required
+from .errors import forbidden
 
 @api.route('/posts/')
 def get_posts():
